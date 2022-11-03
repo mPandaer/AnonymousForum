@@ -54,7 +54,9 @@ fun FrontScreen(onEvent: (FrontEvent) -> Unit = {}) {
                     .fillMaxSize()
             ) {
                 Spacer(modifier = Modifier.height(16.dp))
-                ArticleItem()
+                ArticleItem{
+                    onEvent(FrontEvent.Detail)
+                }
 
             }
         }

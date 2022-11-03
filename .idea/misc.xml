@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProject/AnonymousForum/app/src/main/res/drawable/commont.xml" value="0.2035" />
         <entry key="..\:/AndroidProject/AnonymousForum/app/src/main/res/drawable/edit.xml" value="0.1665" />
+        <entry key="..\:/AndroidProject/AnonymousForum/app/src/main/res/drawable/like.xml" value="0.2035" />
+        <entry key="..\:/AndroidProject/AnonymousForum/app/src/main/res/drawable/star.xml" value="0.2035" />
       </map>
     </option>
   </component>

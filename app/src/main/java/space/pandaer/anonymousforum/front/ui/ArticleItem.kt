@@ -2,6 +2,7 @@ package space.pandaer.anonymousforum.front.ui
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.indication
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -20,11 +21,11 @@ import androidx.compose.ui.unit.dp
 import space.pandaer.anonymousforum.R
 
 @Composable
-fun ArticleItem() {
+fun ArticleItem(onClick : () -> Unit = {}) {
     Surface(modifier = Modifier
         .fillMaxWidth()
         .wrapContentHeight()
-        .padding(horizontal = 8.dp), shape = RoundedCornerShape(16.dp), elevation = 2.dp, color = MaterialTheme.colors.secondary) {
+        .padding(horizontal = 8.dp).clickable { onClick() }, shape = RoundedCornerShape(16.dp), elevation = 2.dp, color = MaterialTheme.colors.secondary) {
         Column(modifier = Modifier.fillMaxWidth().padding(8.dp)) {
             Title(text = "Pandaer杂货铺", modifier = Modifier.padding(bottom = 2.dp))
             Content(text = "认识一下，我是爱吃糖的pandaer", modifier = Modifier.padding(2.dp))

@@ -37,7 +37,7 @@ fun FrontScreen(onEvent: (FrontEvent) -> Unit = {}) {
         },
 
         floatingActionButton = {
-            FloatingActionButton(onClick = { /*TODO*/ }, contentColor = MaterialTheme.colors.primary) {
+            FloatingActionButton(onClick = { onEvent(FrontEvent.New) }, contentColor = MaterialTheme.colors.primary) {
                 Icon(
                     imageVector = ImageVector.vectorResource(id = R.drawable.edit),
                     contentDescription = "new article",
